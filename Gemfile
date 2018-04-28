@@ -45,6 +45,8 @@ group :test do
   gem "simplecov", require: false
   gem "timecop"
   gem "webmock"
+  gem "rspec-example_steps"
+  gem "rspec-wait"
 end
 
 group :production do
