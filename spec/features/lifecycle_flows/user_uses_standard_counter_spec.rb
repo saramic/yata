@@ -4,10 +4,12 @@ feature 'User adds a standard counter numerous times and sees history as a graph
   Steps 'Michael visits the yata site so as to track his pushups over time' do
     When 'Michael adds a tracker for pushups on the yata site' do
       visit root_path
-      pending 'need a page fragment/page model implementation'
-      fail 'need to create a page model to interact with page'
+      focus_on(:tracker) do |tracker|
+        tracker.create_new_tracker('pushups')
+        pending 'need a way to add a value to a tracker'
+        tracker.add_value(40)
+      end
       # click new tracker
-      # focus_on(:tracker).create_new_tracker('pushups')
       # name "pushups"
       # add number 40
     end
