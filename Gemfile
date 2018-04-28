@@ -23,6 +23,9 @@ gem "suspenders"
 gem "title"
 gem "uglifier"
 
+# bootstrap for styles
+gem 'bootstrap', '~> 4.1.0'
+gem 'jquery-rails'
 
 group :development do
   gem "listen"
