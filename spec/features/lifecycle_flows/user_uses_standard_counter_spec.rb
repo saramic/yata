@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'User adds a standard counter numerous times and sees history as a graph' do
+feature 'User adds a standard counter numerous times and sees history as a graph', js: true do
   Steps 'Michael visits the yata site so as to track his pushups over time' do
     When 'Michael adds a tracker for pushups on the yata site' do
       visit root_path
